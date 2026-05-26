@@ -18,7 +18,7 @@ function fileHandel(fileName, statusCode, res) {
 const server = http.createServer((req, res) => {
 
     if (req.url === "/") {
-        fileHandel("./HTML_Files/index.html", 200, res);
+        fileHandel("./HTML_Files/Index.html", 200, res);
     }
     else if (req.url === "/about") {
         fileHandel("./HTML_Files/about.html", 200, res);  // ✅ FIXED
