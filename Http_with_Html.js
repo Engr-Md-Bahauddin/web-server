@@ -18,16 +18,16 @@ function fileHandel(fileName, statusCode, res) {
 const server = http.createServer((req, res) => {
 
     if (req.url === "/") {
-        fileHandel("index.html", 200, res);
+        fileHandel("./HTML_Files/index.html", 200, res);
     }
     else if (req.url === "/about") {
         fileHandel("about.html", 200, res);
     }
     else if (req.url === "/contact") {
-        fileHandel("contact.html", 200, res);
+        fileHandel("./HTML_Files/contact.html", 200, res);
     }
     else {
-        fileHandel("error.html", 404, res);
+        fileHandel("./HTML_Files/error.html", 404, res);
     }
 });
 
