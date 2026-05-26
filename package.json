@@ -1,0 +1,17 @@
+{
+  "name": "node_js_http_with_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Http_with_Html.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Http_with_Html.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
