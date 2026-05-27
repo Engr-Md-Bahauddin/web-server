@@ -3,12 +3,12 @@ const fs = require("fs");
 const PORT = process.env.PORT || 3000;
 
 
-
+//function to handle file reading and response writing
 const server = http.createServer((req, res) => {
 
 function fileHandel(fileName, statusCode) {
     fs.readFile(fileName, (err, data) => {
-        if(err) {console.log(err);}
+        
         res.writeHead(statusCode, { "Content-Type": "text/html" });
         res.write(data);
         res.end();
